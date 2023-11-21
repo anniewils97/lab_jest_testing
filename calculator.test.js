@@ -31,11 +31,19 @@ describe('sum', () => {
 });
 
 describe('subtract', () => {
+  test('can subtract two small numbers', () => {
+    expect(subtract(10,2)).toBe(8);
+  })
 
+  test.skip('can subtract two large positive numbers', () => { 
+    
+  });
 });
 
 describe('multiply', () => {
-
+  test('can multiply two small numbers', () =>{
+    expect(multiply(3,2)).toBe(6);
+});
 });
 
 describe('divide', () => {
