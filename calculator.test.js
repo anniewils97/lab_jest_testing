@@ -68,5 +68,11 @@ describe('even', () => {
 });
 
 describe('odd', () => {
+  test('returns true for an odd number', () => {
+    expect(odd(3)).toBe(true);
+  });
 
+  test('returns false for an even number', () => {
+    expect(odd(6)).toBe(false);
+  });
 });

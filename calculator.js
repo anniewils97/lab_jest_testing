@@ -22,7 +22,7 @@ const even = function(n){
     return n % 2 === 0;
 }
 
-const odd = function(num){
+const odd = function(n){
     return n % 2 !== 0;
 };
 
