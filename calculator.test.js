@@ -59,7 +59,12 @@ describe('modulus', () => {
 });
 
 describe('even', () => {
-
+  test('returns true for an even number', () => {
+    expect(even(4)).toBe(true);
+  });
+  test('returns false for an odd number', () => {
+    expect(even(7)).toBe(false);
+  });
 });
 
 describe('odd', () => {
