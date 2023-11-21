@@ -47,11 +47,15 @@ describe('multiply', () => {
 });
 
 describe('divide', () => {
-
+  test('can divide two small numbers', () =>{
+    expect(divide(10,2)).toBe(5);
+});
 });
 
 describe('modulus', () => {
-
+  test('can calculate modulus', () =>{
+    expect(modulus(3,2)).toBe(1);
+});
 });
 
 describe('even', () => {
