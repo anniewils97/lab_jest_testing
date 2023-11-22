@@ -16,16 +16,16 @@ describe('sum', () => {
     expect(actual).toBe(expected);
   });
 
-  test.skip('can add two large positive numbers', () => { 
-    
+  test('can add two large positive numbers', () => { 
+    expect(sum(600000,400000)).toBe(1000000);
   });
 
-  test.skip('can add two negative numbers', () => {
-    
+  test('can add two negative numbers', () => {
+    expect(sum(-50,-20)).toBe(-70);
   });
 
-  test.skip('can add zero', () => {
-    
+  test('can add zero', () => {
+    expect(sum(10,0)).toBe(10);
   });
 
 });
@@ -34,10 +34,6 @@ describe('subtract', () => {
   test('can subtract two small numbers', () => {
     expect(subtract(10,2)).toBe(8);
   })
-
-  test.skip('can subtract two large positive numbers', () => { 
-    
-  });
 });
 
 describe('multiply', () => {
